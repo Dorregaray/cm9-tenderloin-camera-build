@@ -5,26 +5,6 @@ echo "Applying camera patches"
 echo "Patching kernel"
 pushd kernel/hp/tenderloin
 
-#footswitch
-echo "16097 BEGIN"
-git fetch http://review.cyanogenmod.com/CyanogenMod/hp-kernel-tenderloin refs/changes/97/16097/1 && git cherry-pick FETCH_HEAD
-echo "16097 END"
-
-#axi qos
-echo "16098 BEGIN"
-git fetch http://review.cyanogenmod.com/CyanogenMod/hp-kernel-tenderloin refs/changes/98/16098/1 && git cherry-pick FETCH_HEAD
-echo "16098 END"
-
-#froyo camera stuff
-echo "16099 BEGIN"
-git fetch http://review.cyanogenmod.com/CyanogenMod/hp-kernel-tenderloin refs/changes/99/16099/2 && git cherry-pick FETCH_HEAD
-echo "16099 END"
-
-#wait for config status
-echo "16100 BEGIN"
-git fetch http://review.cyanogenmod.com/CyanogenMod/hp-kernel-tenderloin refs/changes/00/16100/1 && git cherry-pick FETCH_HEAD
-echo "16100 END"
-
 #kernel mem split
 echo "16101 BEGIN"
 git fetch http://review.cyanogenmod.com/CyanogenMod/hp-kernel-tenderloin refs/changes/01/16101/1 && git cherry-pick FETCH_HEAD
