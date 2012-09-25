@@ -2,16 +2,6 @@
 
 echo "Applying camera patches"
 
-echo "Patching kernel"
-pushd kernel/hp/tenderloin
-
-#kernel mem split
-echo "16101 BEGIN"
-git fetch http://review.cyanogenmod.com/CyanogenMod/hp-kernel-tenderloin refs/changes/01/16101/1 && git cherry-pick FETCH_HEAD
-echo "16101 END"
-
-popd
-
 echo "Patching frameworks"
 pushd frameworks/base
 

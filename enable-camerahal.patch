@@ -1,8 +1,8 @@
 diff --git a/BoardConfig.mk b/BoardConfig.mk
-index f1f5888..f5fdb34 100644
+index 0ed4330..1054474 100644
 --- a/BoardConfig.mk
 +++ b/BoardConfig.mk
-@@ -77,6 +77,8 @@ BOARD_USE_QCOM_PMEM := true
+@@ -77,9 +77,11 @@ BOARD_USE_QCOM_PMEM := true
  BOARD_CAMERA_USE_GETBUFFERINFO := true
  BOARD_FIRST_CAMERA_FRONT_FACING := true
  BOARD_CAMERA_USE_ENCODEDATA := true
@@ -10,20 +10,8 @@ index f1f5888..f5fdb34 100644
 +BOARD_USE_FROYO_LIBCAMERA := true
  
  BOARD_OVERLAY_FORMAT_YCbCr_420_SP := true
- USE_CAMERA_STUB := true
-diff --git a/device_tenderloin.mk b/device_tenderloin.mk
-index 39d77e9..a7daa60 100644
---- a/device_tenderloin.mk
-+++ b/device_tenderloin.mk
-@@ -151,6 +151,11 @@ PRODUCT_PACKAGES += \
-     rebootcmd \
-     TenderloinParts
+-USE_CAMERA_STUB := true
++USE_CAMERA_STUB := false
  
-+# Camera
-+PRODUCT_PACKAGES += \
-+    libcamera2 \
-+    camera.msm8660
-+
- # Keylayouts
- PRODUCT_COPY_FILES += \
-     device/hp/tenderloin/prebuilt/usr/keychars/qwerty2.kcm.bin:system/usr/keychars/qwerty2.kcm.bin \
+ # tenderloin- these kernel settings are temporary to complete build
+ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom
