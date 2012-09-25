@@ -15,3 +15,19 @@ index 0ed4330..1054474 100644
  
  # tenderloin- these kernel settings are temporary to complete build
  BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom
+diff --git a/device_tenderloin.mk b/device_tenderloin.mk
+index 2d9827c..4065f69 100644
+--- a/device_tenderloin.mk
++++ b/device_tenderloin.mk
+@@ -151,6 +151,11 @@ PRODUCT_PACKAGES += \
+     rebootcmd \
+     TenderloinParts
+ 
++# Camera
++PRODUCT_PACKAGES += \
++    libcamera2 \
++    camera.msm8660
++
+ # Keylayouts
+ PRODUCT_COPY_FILES += \
+     device/hp/tenderloin/prebuilt/usr/keychars/qwerty2.kcm.bin:system/usr/keychars/qwerty2.kcm.bin \
