@@ -36,6 +36,7 @@ cd ~/android/system/device/hp/tenderloin
 git clone git://github.com/Dorregaray/camerahal.git
 git clone https://github.com/Dorregaray/libcamera2
 patch -p1 < ~/android/cm9-tenderloin-camera-build/enable-camerahal.patch
+git stash
 ```
 
 
@@ -50,6 +51,7 @@ cp ~/android/cm9-tenderloin-camera-build/proprietary/liboemcamera.so ~/android/s
 ```
 cd ~/android/system
 sh ~/android/cm9-tenderloin-camera-build/apply-camera_patches.sh
+pushd device/hp/tenderloin/ && git stash pop && popd
 ```
 
 
