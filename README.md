@@ -4,15 +4,6 @@ cm9-tenderloin-camera-build
 Scripts and other stuff to patch the CM9 sources to enable camera support
 
 
-CURRENT STATUS:
------
-
-```
-The camera initializes, sets parameters but segfauls when receiving preview
-frame from the driver (in cam_frame function from liboemcamera.so).
-```
-
-
 BUILD INSTRUCTIONS:
 -----
 
