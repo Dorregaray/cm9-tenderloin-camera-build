@@ -34,7 +34,6 @@ camera libraries
 ```
 cd ~/android/system/device/hp/tenderloin
 git clone git://github.com/Dorregaray/camerahal.git
-git clone https://github.com/Dorregaray/libcamera2
 patch -p1 < ~/android/cm9-tenderloin-camera-build/enable-camerahal.patch
 git stash
 ```
