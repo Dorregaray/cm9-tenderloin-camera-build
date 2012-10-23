@@ -41,6 +41,36 @@ echo "19250 BEGIN"
 git fetch http://review.cyanogenmod.com/CyanogenMod/android_device_hp_tenderloin refs/changes/50/19250/3 && git cherry-pick FETCH_HEAD
 echo "19250 END"
 
+#media_profiles.xml
+echo "25296 BEGIN"
+git fetch http://review.cyanogenmod.com/CyanogenMod/android_device_hp_tenderloin refs/changes/96/25296/1 && git cherry-pick FETCH_HEAD
+echo "25296 END"
+
+#video encoder
+echo "25298 BEGIN"
+git fetch http://review.cyanogenmod.com/CyanogenMod/android_device_hp_tenderloin refs/changes/98/25298/1 && git cherry-pick FETCH_HEAD
+echo "25298 END"
+
+popd
+
+echo "Patching Camera.apk"
+pushd packages/apps/Camera
+
+#camera controls
+echo "25233 BEGIN"
+git fetch http://review.cyanogenmod.com/CyanogenMod/android_packages_apps_Camera refs/changes/33/25233/1 && git cherry-pick FETCH_HEAD
+echo "25233 END"
+
+#restart cam on mode change
+echo "25234 BEGIN"
+git fetch http://review.cyanogenmod.com/CyanogenMod/android_packages_apps_Camera refs/changes/34/25234/1 && git cherry-pick FETCH_HEAD
+echo "25234 END"
+
+#disable panorama
+echo "25295 BEGIN"
+git fetch http://review.cyanogenmod.com/CyanogenMod/android_packages_apps_Camera refs/changes/95/25295/1 && git cherry-pick FETCH_HEAD
+echo "25295 END"
+
 popd
 
 echo "Patching done"
