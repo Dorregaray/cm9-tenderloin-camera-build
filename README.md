@@ -69,17 +69,21 @@ HOW TO GET THE WIFI WORKING:
 In order to have the fully working wifi you have to replace the existing prebuilt modules
 with the ones compiled for the new kernel memory split.
 You can take the binary modules from my build (from /system/lib/modules directory)
-or build them on your own following the http://review.cyanogenmod.com/#/c/15011/:
+or build them on your own following the http://review.cyanogenmod.com/#/c/15011/
 
 1. Add:
+```
 <project path="external/compat-wireless"
 	name="TouchpadCM/compat-wireless-3.5-rc3-1-sn"
 	revision="master"
 	remote="github" />
 to ~/android/system/.repo/local_manifest.xml
+```
 
 2. Apply the patch:
+```
 cd ~/android/system/device/hp/tenderloin
 git fetch http://review.cyanogenmod.com/CyanogenMod/android_device_hp_tenderloin refs/changes/11/15011/7 && git cherry-pick FETCH_HEAD
+```
 
 3. Rebuild the image.
