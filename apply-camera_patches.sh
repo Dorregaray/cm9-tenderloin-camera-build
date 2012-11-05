@@ -10,11 +10,15 @@ echo "16102 BEGIN"
 git pull http://r.cyanogenmod.com/CyanogenMod/android_frameworks_base refs/changes/02/16102/1
 echo "16102 END"
 
-
-#htc camera overlay http://r.cyanogenmod.com/#/c/13285/
+#htc camera overlay
 echo "13285 BEGIN"
 git pull http://r.cyanogenmod.com/CyanogenMod/android_frameworks_base refs/changes/85/13285/8
 echo "13285 END"
+
+#preview rotation
+echo "25957 BEGIN"
+git pull http://r.cyanogenmod.org/CyanogenMod/android_frameworks_base refs/changes/57/25957/1
+echo "25957 END"
 
 popd
 
