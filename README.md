@@ -29,28 +29,24 @@ git clone -b ics git://github.com/Dorregaray/hp-kernel-tenderloin.git tenderloin
 ```
 
 
-4. Enter the ~/android/system/device/hp/tenderloin and download and enable the
-camera libraries
-```
-cd ~/android/system/device/hp/tenderloin
-git clone git://github.com/Dorregaray/camerahal.git
-patch -p1 < ~/android/cm9-tenderloin-camera-build/enable-camerahal.patch
-git stash
-```
-
-
-5. Replace the proprietary camera libs with the ones from CM7a2.1:
+4. Replace the proprietary camera libs with the ones from CM7a2.1:
 ```
 cp ~/android/cm9-tenderloin-camera-build/proprietary/libcamera.so ~/android/system/vendor/hp/tenderloin/proprietary/lib
 cp ~/android/cm9-tenderloin-camera-build/proprietary/liboemcamera.so ~/android/system/vendor/hp/tenderloin/proprietary/lib
 ```
 
 
-6. Apply the required camera patches:
+5. Apply the required camera patches:
 ```
 cd ~/android/system
 sh ~/android/cm9-tenderloin-camera-build/apply-camera_patches.sh
-pushd device/hp/tenderloin/ && git stash pop && popd
+```
+
+
+6. Apply additional patches (if want to):
+```
+cd ~/android/system
+sh ~/android/cm9-tenderloin-camera-build/apply-additional-patches.sh
 ```
 
 

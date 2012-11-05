@@ -40,6 +40,11 @@ echo "16122 BEGIN"
 git pull http://r.cyanogenmod.com/CyanogenMod/android_device_hp_tenderloin refs/changes/22/16122/1
 echo "16122 END"
 
+#camera hal
+echo "16532 BEGIN"
+git pull http://r.cyanogenmod.com/CyanogenMod/android_device_hp_tenderloin refs/changes/32/16532/8
+echo "16532 END"
+
 #camera.apk config overlay
 echo "19250 BEGIN"
 git pull http://r.cyanogenmod.com/CyanogenMod/android_device_hp_tenderloin refs/changes/50/19250/3
