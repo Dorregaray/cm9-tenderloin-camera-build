@@ -85,11 +85,6 @@ echo "25234 BEGIN"
 git pull http://r.cyanogenmod.com/CyanogenMod/android_packages_apps_Camera refs/changes/34/25234/1
 echo "25234 END"
 
-#disable panorama
-echo "25295 BEGIN"
-git pull http://r.cyanogenmod.com/CyanogenMod/android_packages_apps_Camera refs/changes/95/25295/1
-echo "25295 END"
-
 popd
 
 echo "Patching done"
