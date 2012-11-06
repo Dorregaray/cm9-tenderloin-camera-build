@@ -1,5 +1,8 @@
+#!/bin/sh
 
-pushd device/hp/tenderloin
+TOPDIR=`pwd`
+
+cd $TOPDIR/device/hp/tenderloin
 
 #touch pressure
 echo "20894 BEGIN"
@@ -11,4 +14,4 @@ echo "24215 BEGIN"
 git pull http://r.cyanogenmod.com/CyanogenMod/android_device_hp_tenderloin refs/changes/15/24215/1
 echo "24215 END"
 
-popd
+cd $TOPDIR
