@@ -42,7 +42,7 @@ echo "16122 END"
 
 #camera hal
 echo "16532 BEGIN"
-git pull http://r.cyanogenmod.com/CyanogenMod/android_device_hp_tenderloin refs/changes/32/16532/8
+git pull http://r.cyanogenmod.com/CyanogenMod/android_device_hp_tenderloin refs/changes/32/16532/9
 echo "16532 END"
 
 #camera.apk config overlay
@@ -52,7 +52,7 @@ echo "19250 END"
 
 #media_profiles.xml
 echo "25296 BEGIN"
-git pull http://r.cyanogenmod.com/CyanogenMod/android_device_hp_tenderloin refs/changes/96/25296/1
+git pull http://r.cyanogenmod.com/CyanogenMod/android_device_hp_tenderloin refs/changes/96/25296/2
 echo "25296 END"
 
 #video encoder
