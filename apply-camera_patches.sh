@@ -9,7 +9,7 @@ cd $TOPDIR/frameworks/base
 
 #camera parameters
 echo "16102 BEGIN"
-git pull http://r.cyanogenmod.com/CyanogenMod/android_frameworks_base refs/changes/02/16102/1
+git pull http://r.cyanogenmod.com/CyanogenMod/android_frameworks_base refs/changes/02/16102/2
 echo "16102 END"
 
 #htc camera overlay
@@ -81,7 +81,7 @@ cd $TOPDIR/packages/apps/Camera
 
 #camera controls
 echo "25233 BEGIN"
-git pull http://r.cyanogenmod.com/CyanogenMod/android_packages_apps_Camera refs/changes/33/25233/1
+git pull http://r.cyanogenmod.com/CyanogenMod/android_packages_apps_Camera refs/changes/33/25233/2
 echo "25233 END"
 
 #restart cam on mode change
