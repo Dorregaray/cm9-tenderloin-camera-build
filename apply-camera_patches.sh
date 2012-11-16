@@ -20,11 +20,6 @@ echo "16120 BEGIN"
 git pull http://r.cyanogenmod.com/CyanogenMod/android_device_hp_tenderloin refs/changes/20/16120/1
 echo "16120 END"
 
-#compat binder
-#echo "16122 BEGIN"
-#git pull http://r.cyanogenmod.com/CyanogenMod/android_device_hp_tenderloin refs/changes/22/16122/1
-#echo "16122 END"
-
 #camera hal
 echo "16532 BEGIN"
 git pull http://r.cyanogenmod.com/CyanogenMod/android_device_hp_tenderloin refs/changes/32/16532/10
